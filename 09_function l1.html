@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>function l1</title>
+</head>
+<body>
+	<input type="text" name="name" id="user name">
+	<button onclick="submit()">submit</button>
+	<h1 class="h1"></h1>
+	
+
+</body>
+<script type="text/javascript">
+		function submit() {
+			var uname = document.getElementById('user name').value;
+			document.getElementsByClassName('h1')[0].innerHTML = "hello "+uname;
+		}
+	</script>
+</html>

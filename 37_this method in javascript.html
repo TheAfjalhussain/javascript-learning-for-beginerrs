@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>This keyword in javascript</title>
+</head>
+<body>
+	<br>
+	<!--button onclick="this.style.display = 'none'">HIDE ME</button-->
+	<button onclick="remove(this)">click me to hide</button>
+
+</body>
+<script type="text/javascript">
+	function remove(elem) {
+		elem.style.display = "none";
+		//alert(this)
+	}
+
+	var person = {
+		firstName : "welcome to the developer world",
+		lastName : " afjal",
+
+		fullName : function(){
+			return this.firstName + this.lastName
+
+
+		}
+
+
+	};
+
+	document.write("<h1>"+ person.fullName());
+
+</script>
+</html>

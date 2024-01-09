@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Method of array function 2</title>
+</head>
+<body>
+	<h1 id="res"></h1>
+	<button onclick="pop()">pop</button>
+	<button onclick="push()">push</button>
+	<button onclick="slice()">slice</button>
+	<button onclick="reverse()">reverse</button>
+	<button onclick="shift()">shift</button>
+
+</body>
+<script type="text/javascript">
+		var fruits = ["mango" , "apple" , "lichi" , "gauave" , "banana"];
+		var demo = fruits;
+		document.getElementById('res').innerHTML = demo;
+		function pop() {
+			demo.pop();
+		
+		document.getElementById('res').innerHTML = demo;
+	}
+	function push() {
+		var x = prompt("please enter a fruit","");
+		demo.push(x);
+		document.getElementById('res').innerHTML = demo;
+	}
+	function slice() {
+		var x = demo.slice(2);
+		document.getElementById('res').innerHTML = x;
+	}
+	function reverse() {
+		demo.reverse();
+		document.getElementById('res').innerHTML = demo;
+	}
+	function shift() {
+		var x = demo.shift();
+		document.getElementById('res').innerHTML = x;
+	}
+
+	</script>
+</html>

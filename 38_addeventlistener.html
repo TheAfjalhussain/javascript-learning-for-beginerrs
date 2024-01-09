@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>add event listener</title>
+</head>
+<body>
+	<div id="counter">0</div>
+	<button id="btn">click me</button>
+
+</body>
+<script type="text/javascript">
+	var i = 0;
+	document.getElementById('btn').addEventListener("click",function(){
+
+		document.getElementById('counter').innerHTML = i;
+		i++;
+	}) 
+	document.getElementById('btn').addEventListener("mouseenter",colorchange);
+	function colorchange(){
+	document.getElementById('counter').style.color = "red";
+}
+document.getElementById('btn').addEventListener("mouseleave",colorblack);
+	function colorblack(){
+	document.getElementById('counter').style.color = "black";
+}
+</script>
+</html>

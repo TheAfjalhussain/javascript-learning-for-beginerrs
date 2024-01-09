@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>History object method2</title>
+</head>
+<body>
+	<h1>
+		
+	</h1>
+	<h2>second page</h2>
+	<button onclick="window.history.forward();">forward</button>
+	<button onclick="window.history.back();">back</button>
+	<button onclick="window.history.go(3);">go</button>
+	<!--    Example
+		0  =  first
+		1  =  second
+		2 = third
+		3  = fourth
+	-->
+
+</body>
+<script type="text/javascript">
+	var c = window.history.length;
+	document.getElementsByTagName('h1')[0].innerHTML = c;
+</script>
+</html>

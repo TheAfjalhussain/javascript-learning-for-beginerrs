@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Number validation</title>
+</head>
+<body>
+	please enter your number<br>
+	<input type="text" name="" onkeyup="val(this)">
+	<div id="res">
+	</div>
+
+</body>
+<script type="text/javascript">
+	document.getElementById('res').style.color = "red";
+	function val(elem) {
+		//document.getElementById('res').innerHTML =  elem.value;
+		//isNaN - is not a number
+		if (isNaN(elem.value)) {
+			document.getElementById('res').innerHTML = "please enter only numbers"
+		}else{
+			document.getElementById('res').innerHTML = ""
+		   if (elem.value.length > 10) {
+				document.getElementById('res').innerHTML = "please enter only 10 digits"
+				}else{
+					document.getElementById('res').innerHTML = ""
+				}
+
+		   
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>get and set attributes</title>
+	<style type="text/css">
+		.red{
+			color: red;
+		}
+		.blue{
+			color: blue;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="red" id="test">Hello world!!</div>
+	<button onclick="testing()">click me</button>
+	<h1 id="res"></h1>
+
+</body>
+<script type="text/javascript">
+	var test = document.getElementById('test')
+	function testing(){
+		var a = test.getAttribute("class");
+		document.getElementById("res").innerText = a;
+		if(a == "red") {
+			test.setAttribute("class","blue");
+		}else{
+			test.setAttribute("class","red");
+		}  //set attribute value set karta hai. and get attribute value get karta hai.
+	}
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exaptation handling in javascript</title>
+</head>
+<body>
+	<button onclick="rew()">Click Me</button>
+	<h1 id="res"></h1>
+
+</body>
+<script type="text/javascript">
+	function rew() {
+		try{
+			//alertf("hello");
+			var n = "welcome to ws cube tech";
+			var x = n.toUpperCase();
+			document.getElementById('res').innerText = x;
+			
+		}
+	catch(error){
+			document.getElementById('res').innerText = error;
+		}
+	}
+</script>
+</html>

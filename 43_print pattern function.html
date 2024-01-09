@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>print pattern function using user defined function</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var rows = prompt("please enter number","");
+	//calling
+	printpattern (rows);
+	//declear and define
+	function printpattern(rows) {
+
+		for (var i= 1;i<=rows;i++){
+
+			for (var j = 1; j<=i; j++) {
+				
+				document.write("*");
+				
+
+			}
+
+			document.write("<br>")
+			
+		}
+		for (var i= rows;i>=1;i--){
+
+			for (var j = 1; j<=i; j++) {
+				
+				document.write("*");
+				
+
+			}
+
+			document.write("<br>")
+			
+		}
+	}
+</script>
+</html>

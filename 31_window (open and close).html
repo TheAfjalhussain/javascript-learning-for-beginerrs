@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>open and closed a new window in javascript</title>
+</head>
+<body>
+	<button onclick="openWin()">open </button>
+	<button onclick="closeWin()">close </button>
+
+</body>
+<script type="text/javascript">
+	var win;
+	var win2;
+	function openWin() {
+		win = window.open("https://www.wscubetech.com","width=500px,height=500px");
+		win2 = window.open("https://www.learnvern.com");
+		
+	}
+	function closeWin() {
+		win.close();
+		win2.close();
+
+		
+	}
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Making otp</title>
+</head>
+<body>
+	<button onclick="getotp()">otp</button>
+
+</body>
+<script type="text/javascript">
+	function getotp() {
+		var x = Math.random() * 10000;
+		alert(x);
+		var opt = Math.floor(x);
+		document.write(opt)
+	}
+	
+</script>
+</html>

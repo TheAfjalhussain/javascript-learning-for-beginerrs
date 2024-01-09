@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>capslock on detection using javascript</title>
+	<style type="text/css">
+		*{
+			font-family: verdana;
+		}
+		body{
+			background-color: grey;
+		}
+		h1{
+			font-family: verdana;
+			margin: auto;
+			text-align: center;
+			color: blue;
+			margin-top: 60px;
+			text-align: center;
+
+		}
+		form{
+			width: 350px;
+            height: 500px;
+			margin: auto;
+			background-color: whitesmoke;
+		}
+		div{
+			margin: 30px;
+		}
+		label{
+			margin: 20px;
+			font-family: cursive;
+		}
+		input{
+			margin-left: 20px;
+		}
+		#alert{
+			margin: 10px;
+			color: red;
+			font-size: 15px;
+
+
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		
+			<p><h1>Registration Form</h1></p>
+			<br>
+			<p>
+				<label>User Name</label><br><br>
+				<input type="user name" name="user name" placeholder="User Name" type="user name">
+			</p>
+			<p>
+				<label for="email">Email</label><br><br>
+				<input type="email" name="email" type="email" placeholder="email@123">
+			</p>
+			<p>
+				<label for="password">Password</label><br><br>
+				<input type="password" name="password" value="" id="password">
+				
+			</p>
+			<p>
+				<label for="confirm password"> Confirm Password</label><br><br>
+				<input id="confirm_password" type="password" name="password" value="" onkeyup="check(this)"><br>
+				<error id="alert"></error>
+			</p>
+			<br>
+			<p>
+				<input type="submit" name="submit" value="submit" style="width: 300px" height="20px">
+			</p>
+		
+	</form>
+
+</body>
+<script type="text/javascript">
+	window.addEventListener('keyup',event =>{
+		var isCaps = (event.getModifierState('CapsLock'));
+		//getModifierState()check karega ki abhi jo key press hua wo kon sa key tha.
+		if (isCaps) {
+			//true
+			document.getElementById('alert').innerText = "Warning !! CapsLock is on";
+              
+		}else{
+			//false
+			document.getElementById('alert').innerText = "";
+
+		}
+
+	})
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Date and time function</title>
+</head>
+<body>
+	<h1 id="res"></h1>
+	<button onclick="getDate()">Date</button>
+	<button onclick="year()">Year</button>
+	<button onclick="month()">Month</button>
+	<button onclick="hour()">hours</button>
+	<button onclick="toDate()">Date</button>
+	<button onclick="day()">Day</button>
+	<button onclick="min()">Minute</button>
+	<button onclick="time()">Time</button>
+	<button onclick="sec()">Second</button>
+
+</body>
+<script type="text/javascript">
+	var date = new Date();
+	function getDate() {
+		document.getElementById('res').innerText = date;
+	}
+	function year() {
+		document.getElementById('res').innerText = date.getFullYear();
+	}
+	function month() {
+		var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+		document.getElementById('res').innerText = month[date.getMonth()];
+	}
+	function hour() {
+		document.getElementById('res').innerText = date.getHours();
+	}
+	function toDate() {
+		document.getElementById('res').innerText = date.getDate();
+	}
+	function day() {
+		var day = ["sunday","monday","tuesday","wednesday","thrusday","friday","saturday"];
+		document.getElementById('res').innerText = day[date.getDay()];
+	}
+	function min() {
+		document.getElementById('res').innerText = date.getMinutes();
+	}
+	function time() {
+		document.getElementById('res').innerText = date.getTime();
+	}
+	function sec() {
+		document.getElementById('res').innerText = date.getSeconds();
+	}
+	
+</script>
+</html>

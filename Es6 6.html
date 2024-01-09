@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Es6 6 (javascript promises)</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	  const myPromise = new Promise((resolved,rejected) => {
+	  	const a = 2 , b = 3;
+	  	const c = a + b;
+	  	if (c === 4){
+	  		resolved(`yes!, $ {a} + $ {b} = 4`);
+	  	}else{
+	  		rejected(`no! $ {a} + $ {b} != 4 `);
+	  	}
+	  });
+
+	  myPromise.then((m) => {
+	  	document.write(m);
+	  }).catch((err) => {
+	  	document.write(err);
+	  })
+</script>
+</html>
